@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Search Bar -->
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="Search..." />
+        <img src="./img/search.png" alt="search icon" id="searchBtn" />
+      </div>
+
+      <!-- Information -->
+      <div class="info">
+        <!-- Weather Icon -->
+        <div class="weather">
+          <img src="./img/clear.png" alt="clear" id="weatherIcon" />
+        </div>
+
+        <!-- temperature -->
+        <p class="temp">0°C</p>
+        <p class="city">City</p>
+
+        <!-- Details -->
+        <div class="detail">
+          <!-- Humidity -->
+          <div class="col">
+            <img src="./img/humidity.png" alt="humidity" width="40" />
+            <div class="row">
+              <p class="humidity">0%</p>
+              <p class="name">Humidity</p>
+            </div>
+          </div>
+          <!-- Wind Speed -->
+          <div class="col">
+            <img src="./img/wind.png" alt="humidity" width="40" />
+            <div class="row">
+              <p class="wind">0 km/h</p>
+              <p class="name">Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- When Error -->
+      <div class="error">
+        <p class="e-message"></p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
